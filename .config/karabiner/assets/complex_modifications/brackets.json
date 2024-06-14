@@ -1,0 +1,15 @@
+
+{  "description": "Option-5 to Option-Cmd-7",
+   "manipulators": [ {
+             "type": "basic",
+             "from": { "key_code": "5",
+                         "modifiers": {
+                           "mandatory": [ "right_control "]
+                     }                },
+               "to": [
+                     { "key_code": "1",
+                         "modifiers": "right_control",
+                       "repeat": false  }
+                     ]
+                   } ]
+≈}

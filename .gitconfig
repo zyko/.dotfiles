@@ -1,0 +1,15 @@
+[credential]
+	helper = git-credential-manager-core
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[user]
+	name = Matthias Burkhardt
+	email = 13379192+zyko@users.noreply.github.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[core]
+	excludesfile = ~/.gitignore_global

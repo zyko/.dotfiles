@@ -1,0 +1,139 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.2",
+  "schemes" : [
+    {
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.3768,
+        "disableAcceleration" : false
+      },
+      "if" : {
+        "device" : {
+          "productName" : "ROCCAT Kone Aimo",
+          "productID" : "0x2e27",
+          "category" : "mouse",
+          "vendorID" : "0x1e7d"
+        }
+      },
+      "scrolling" : {
+        "speed" : {
+          "vertical" : 27.05
+        },
+        "acceleration" : {
+          "vertical" : 0.73
+        },
+        "modifiers" : {
+          "vertical" : {
+            "command" : {
+              "type" : "zoom"
+            }
+          }
+        },
+        "reverse" : {
+          "vertical" : false
+        },
+        "distance" : {
+          "vertical" : "auto"
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "universalBackForward" : false
+      },
+      "if" : {
+        "device" : {
+          "productName" : "USB Optical Mouse",
+          "productID" : "0x5",
+          "category" : "mouse",
+          "vendorID" : "0x1bcf"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.3225,
+        "disableAcceleration" : false
+      },
+      "scrolling" : {
+        "speed" : {
+          "vertical" : 51.29
+        },
+        "acceleration" : {
+          "vertical" : 0
+        },
+        "reverse" : {
+          "vertical" : false
+        },
+        "distance" : {
+          "vertical" : "auto"
+        }
+      }
+    },
+    {
+      "pointer" : {
+        "acceleration" : 0
+      },
+      "if" : {
+        "device" : {
+          "productName" : "VirtualHID",
+          "serialNumber" : "0001",
+          "productID" : "0xf00d",
+          "category" : "mouse",
+          "vendorID" : "0xfeed"
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "universalBackForward" : false
+      },
+      "if" : {
+        "device" : {
+          "productName" : "FUJITSU LX960",
+          "productID" : "0x103a",
+          "category" : "mouse",
+          "vendorID" : "0xbf8"
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "universalBackForward" : false
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x0",
+          "category" : "trackpad",
+          "productID" : "0x0"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        }
+      }
+    },
+    {
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.1016
+      },
+      "if" : {
+        "device" : {
+          "productName" : "Lenovo USB Receiver",
+          "productID" : "0x609b",
+          "category" : "mouse",
+          "vendorID" : "0x17ef"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 0
+        },
+        "speed" : {
+          "vertical" : 49.21
+        }
+      }
+    }
+  ]
+}

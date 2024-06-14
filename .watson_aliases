@@ -1,0 +1,36 @@
+# vim: filetype=sh
+# following env vars must be set:
+# $WATSON_TIMESHEET_FOLDER, $WATSON_DAY_ENDTIME
+
+
+alias waly="watson log -yGc"
+alias wap="watson projects"
+alias warw="watson report -w -G"
+alias warm="watson report -m -G"
+alias walw="watson log -wGc && warw"
+alias walm="watson log -mGc && warm"
+
+wav() {
+    if [ $# -eq 0 ]; then
+        echo "Usage: wau <yyyy-mm-dd>. E. g. wau 2024-05-13"
+        return 1
+    fi
+    watson add --from "$1 08:00" --to "$1 $WATSON_DAY_ENDTIME" vacation
+    watson log -G -f "$1" -t "$1"
+}
+
+was() {
+    if [ $# -eq 0 ]; then
+        echo "Usage: wak <yyyy-mm-dd>. E. g. wak 2024-05-13"
+        return 1
+    fi
+    watson add --from "$1 08:00" --to "$1 $WATSON_DAY_ENDTIME" sick
+    watson log -G -f "$1" -t "$1" 
+}
+
+warep() {
+    current_year=$(date +%Y)
+    watson report --year --csv > $WATSON_TIMESHEET_FOLDER/report_${current_year}.csv
+    echo report for $current_year was saved
+}
+
