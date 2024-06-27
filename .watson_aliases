@@ -12,7 +12,7 @@ alias walm="watson log -mGc && warm"
 
 wav() {
     if [ $# -eq 0 ]; then
-        echo "Usage: wau <yyyy-mm-dd>. E. g. wau 2024-05-13"
+        echo "Usage: wav <yyyy-mm-dd>. E. g. wav 2024-05-13"
         return 1
     fi
     watson add --from "$1 08:00" --to "$1 $WATSON_DAY_ENDTIME" vacation
@@ -21,7 +21,7 @@ wav() {
 
 was() {
     if [ $# -eq 0 ]; then
-        echo "Usage: wak <yyyy-mm-dd>. E. g. wak 2024-05-13"
+        echo "Usage: was <yyyy-mm-dd>. E. g. was 2024-05-13"
         return 1
     fi
     watson add --from "$1 08:00" --to "$1 $WATSON_DAY_ENDTIME" sick
