@@ -6,6 +6,18 @@ partly following [this guide](https://www.playfulpython.com/configuring-neovim-a
 - `f<char>` put cursor on next character in line
     - `;` repeat operation
     - `:` repeat operation in opposite direction
+- `R<enter>` break line
+- `J` remove line break
+- `D` remove rest of line
+- `:%s/foo/bar/gc` **s**ubstitute 'foo' with 'bar', ask for confirmation (gc)
+    - `%` all lines. remove for current line only
+    - `gcI` ask for confirmation and case sensitive
+- `:s/\[0\]/abc` substitutes `[0]` with `abc`. `\` escape the square brackets.
+- `H` `M` `L` move cursor **H**igh, **M**id, **L**ow
+- `ctrl + v` visual block mode. note to press `ESC` in the end, not Enter!
+- `*` search for underlying word
+- `v + t + <char>` **v**isualize **t**il <char>
+- `:noh` clear search highlighting
 
 Including following Plugins:
 
