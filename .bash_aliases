@@ -26,10 +26,10 @@ bindkey -v
 bindkey ^R history-incremental-search-backward 
 bindkey ^S history-incremental-search-forward
 alias nv="nvim ."
-alias nvimc="nvim /Users/matze/.config/nvim/"
+alias nvimc="nvim ${HOME}/.config/nvim/"
 
 # __ TMUX __
-alias tmuxc="nvim ~/.tmux.conf"
+alias tmuxc="nvim ${HOME}/.tmux.conf"
 
 # __ ZSH __
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -66,18 +66,9 @@ alias jp='jupyter notebook --no-browser --allow-root'
 # --NotebookApp.allow_origin=* --NotebookApp.allow_remote_access=1'
 alias jupdm='jt -t monokai -f fira -fs 13 -nf ptsans -nfs 11 -N -kl -cursw 5 -cursc r -cellw 90% -T -vim'
 
-# Creating new projects and environments
-# Aliases for scripts
-alias make_save_settings="default && ipython ${SCRIPTS_DIR}/save_settings.ipy"
-alias make_load_settings="default && ipython ${SCRIPTS_DIR}/load_settings.ipy"
-alias make_new_project="default && ipython ${SCRIPTS_DIR}/start_new_project.ipy"
-alias make_new_env="default && ipython ${SCRIPTS_DIR}/new_environment.ipy"
-alias make_uninstall_env="default && ipython ${SCRIPTS_DIR}/uninstall_envs.ipy"
-
 # project, repo and plugin aliases
 alias dotf="cd ${DOTFILES_DIR}"
 alias dalle="cd ${CODING_DIR}/dalle_images/"
-alias scripts="default && cd ${REPOS_DIR}/scripts"
 alias default="cd ${CLOUD_DIR}/Projects/default/Notebooks && source ${ENVS_DIR}/env_default/bin/activate"
 alias defaultjup="default && jp"
 alias ca="cd ${REPOS_DIR}/chatalyser && source ${ENVS_DIR}/env_chatalyser/bin/activate"
