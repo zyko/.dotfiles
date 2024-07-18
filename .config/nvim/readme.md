@@ -82,6 +82,11 @@ folding.
 ### null-ls:  
 Linting & Formatting. Uses `ruff` as linter and `black` for formatting
 
+### [octo.nvim](https://github.com/pwntester/octo.nvim):
+Edit and review GitHub issues and PRs.
+- `Octo pr` Open PR.
+- `Octo pr changes` Show changes in PR.
+
 ### tmux-lua:  
 Tmux installation for multiplexing / sessions.
 
