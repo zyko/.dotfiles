@@ -5,16 +5,16 @@ echo ".bash_aliases is executed!"
 source ~/.watson_aliases
 # todo: throw error if CODE_DIR or CLOUD_DIR not set.
 
-alias cdc="cd ${CODE_DIR}/"
-alias cde="cd ${ENVS_DIR}"
-alias cdr="cd ${REPOS_DIR}"
-alias waa="nvim ${HOME}/.watson_aliases"
-
 export REPOS_DIR="${CODE_DIR}/repos"
 export ENVS_DIR="${CODE_DIR}/envs"
 export DOTFILES_DIR="${HOME}/.dotfiles"
 export PIP_CONF_PATH="${HOME}/.pip/pip.conf"
 export GIT_CONF_PATH="${HOME}/.gitconfig"
+
+alias cdc="cd ${CODE_DIR}/"
+alias cde="cd ${ENVS_DIR}"
+alias cdr="cd ${REPOS_DIR}"
+alias waa="nvim ${HOME}/.watson_aliases"
 
 # __ ITERM __
 export MPLBACKEND="module://itermplot"
@@ -68,7 +68,7 @@ alias jupdm='jt -t monokai -f fira -fs 13 -nf ptsans -nfs 11 -N -kl -cursw 5 -cu
 
 # project, repo and plugin aliases
 alias dotf="cd ${DOTFILES_DIR}"
-alias dalle="cd ${CODING_DIR}/dalle_images/"
+alias dalle="cd ${CODE_DIR}/data/dalle_images/"
 alias default="cd ${CLOUD_DIR}/Projects/default/Notebooks && source ${ENVS_DIR}/env_default/bin/activate"
 alias defaultjup="default && jp"
 alias ca="cd ${REPOS_DIR}/chatalyser && source ${ENVS_DIR}/env_chatalyser/bin/activate"
