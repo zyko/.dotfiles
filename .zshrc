@@ -109,12 +109,19 @@ source $ZSH/oh-my-zsh.sh
 
 echo ".zshrc is executed!"
 export BASH_PC_SPECIFIC="$HOME/LRZ/Settings/.bash_mac"
-source $HOME/.bash_aliases
-source $BASH_PC_SPECIFIC
 
-#if [ -f "/Users/matze/LRZ/Settings/.bash_mac" ]; then
-#        source  "/Users/matze/LRZ/Settings/.bash_mac"
-#fi
+if [ -f $BASH_PC_SPECIFIC ]; then
+	source $BASH_PC_SPECIFIC
+        # source  "/Users/matze/LRZ/Settings/.bash_mac"
+else
+	echo "WARNING! pc-specific bash file was not found."
+fi
+
+if [ -f $HOME/.bash_aliases ]; then
+	source $HOME/.bash_aliases
+else
+	echo "WARNING! .bash_aliases file was not found."
+fi
 
 # pip zsh completion start
 function _pip_completion {
@@ -125,7 +132,7 @@ function _pip_completion {
              COMP_CWORD=$(( cword-1 )) \
              PIP_AUTO_COMPLETE=1 $words[1] 2>/dev/null ))
 }
-compctl -K _pip_completion /Users/matze/Coding/envs/env_default/bin/python3 -m pip
+compctl -K _pip_completion $HOME/Coding/envs/env_default/bin/python3 -m pip
 # pip zsh completion end
 
 export PATH="/opt/homebrew/opt/bzip2/bin:$PATH"
