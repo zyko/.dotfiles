@@ -1,10 +1,11 @@
 # Information about plugins, addons and mac software.
-This repository contains the configs, descriptions and 
-This repository contains information about the most important plugins, addons and other software I'm using on an almost daily basis.
-In each section, there is a `readme.md` with a brief explanation about the software, followed by the (for me) most important shortcuts or features.
+This repository contains:
+- linked dotfiles.
+- list of my most useful mac software including plugins and addons.
+- most useful commands and shortcuts.
 
-These files are being symlinked using [stow](https://www.gnu.org/software/stow/manual/stow.html) 
-as described in [this blog entry](https://tamerlan.dev/how-i-manage-my-dotfiles-using-gnu-stow/)
+The dotfiles are being symlinked using [stow](https://www.gnu.org/software/stow/manual/stow.html) 
+as described in [this blog entry](https://tamerlan.dev/how-i-manage-my-dotfiles-using-gnu-stow/).
 
 
 # Configs
@@ -22,7 +23,8 @@ Check [separate readme file](.config/nvim/readme.md)
 - `.gitignore_global` Ignore some directories in all repos.
 
 ## [Tmux (Version 3.2a)](https://github.com/tmux/tmux/wiki)  
-Settings followed on most party by [this video](https://www.youtube.com/watch?v=U-omALWIBos) and are stored in `.tmux.conf`
+Settings followed on most party by [this video](https://www.youtube.com/watch?v=U-omALWIBos) and 
+are stored in `.tmux.conf`.
 - `ctrl + b` leader
 
 ### Tmux Configs
@@ -95,4 +97,8 @@ Including the following tools
 - [blog entry](https://elijahmanor.com/blog/watson-tmux)
 - [official documentation](https://tailordev.github.io/Watson/user-guide/commands/)
 
+# Other useful commands
+## (GPU) Server
 
+- `nohup python3 my_script.py &` executes python script in background (no hang up).
+- `nvidia-smi` shows overview over nvidia GPUs.
