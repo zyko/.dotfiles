@@ -60,7 +60,15 @@ IMAP email client for writing emails in markdown.
 Calendar app
 
 ## [Obsidian](https://obsidian.md/)
-notes in markdown. Notes themselves are stored in non-public cloud service. Including Addons:
+notes in markdown. Notes themselves are stored in non-public cloud service.
+
+### Shortcuts
+- `ctrl + o` open quick switcher
+
+### Links
+`[This](<file#first headline##second headline>)` is a link with spaces
+
+### Plugins
 - [Excalidraw](https://github.com/zsviczian/obsidian-excalidraw-plugin)
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
 - [Reminder](https://github.com/uphy/obsidian-reminder)

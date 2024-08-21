@@ -15,9 +15,9 @@ partly following [this guide](https://www.playfulpython.com/configuring-neovim-a
 - `:s/\[0\]/abc` substitutes `[0]` with `abc`. `\` escape the square brackets.
 - `H` `M` `L` move cursor **H**igh, **M**id, **L**ow
 - `ctrl + v` visual block mode. note to press `ESC` in the end, not Enter!
-- `*` search for underlying word
 - `v + t + <char>` **v**isualize **t**il <char>
 - `:noh` clear search highlighting
+- `:vsplit | edit C` open current file in new vsplit
 
 Including following Plugins:
 
@@ -44,6 +44,9 @@ sends markdown files to browser where it can be viewed.
 ### nvim-comment:
 quick commenting: `gcc` - one line. `gc` - multiple lines
 
+### nvim-dap:
+helps debugging
+
 ### [nvim-cmp](https://github.com/hrsh7th/nvim-cmp):  
 Used for auto-completion
 
@@ -59,6 +62,8 @@ Among other things, responsible for:
 Commonly used shortcuts:
 - `<leader> rn` - refactor variable
 - `<leader> e` - show advanced diagnostics (errors)
+- `gd` - go to definition
+- `gr` - show references
 
 ### nvim-tree:  
 directory tree visualization while browsing files in nvim.
