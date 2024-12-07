@@ -36,7 +36,7 @@ are stored in `.tmux.conf`.
 - `ctrl + b` leader
 
 ### Tmux Configs
-my: <leader> = ctrl + b
+`<leader> = ctrl + b`
 
 - `<leader> + s` - show all sessions
 - `<leader> + w` - show all windows
