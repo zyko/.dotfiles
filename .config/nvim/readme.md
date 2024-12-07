@@ -2,29 +2,18 @@
 
 partly following [this guide](https://www.playfulpython.com/configuring-neovim-as-a-python-ide/)
 
-- `*` search forward of word beneath cursor
-- `f<char>` put cursor on next character in line
-    - `;` repeat operation
-    - `:` repeat operation in opposite direction
-- `R<enter>` break line
-- `J` remove line break
-- `D` remove rest of line
-- `:%s/foo/bar/gc` **s**ubstitute 'foo' with 'bar', ask for confirmation (gc)
-    - `%` all lines. remove for current line only
-    - `gcI` ask for confirmation and case sensitive
-- `:s/\[0\]/abc` substitutes `[0]` with `abc`. `\` escape the square brackets.
-- `H` `M` `L` move cursor **H**igh, **M**id, **L**ow
-- `ctrl + v` visual block mode. note to press `ESC` in the end, not Enter!
-- `v + t + <char>` **v**isualize **t**il <char>
-- `:noh` clear search highlighting
-- `:vsplit | edit C` open current file in new vsplit
-
 Including following Plugins:
 
 ## Plugins
 
-### colorscheme  
+### [colorscheme](https://github.com/bluz71/vim-nightfly-colors)  
 for color schemes.
+
+### [easymotion](https://github.com/easymotion/vim-easymotion)  
+smoother navigation.
+- `<leader> m f <char>` highlight <char> after cursor
+- `<leader> m w ` highlight beginning of words after cursor
+
 
 ### [gp.nvim](https://github.com/Robitx/gp.nvim) (OpenAI API)
 - `:GpChatNew` - opens new gpt window
@@ -33,24 +22,26 @@ for color schemes.
 - `:GpChatToggle` - opens finder 
 - `:GpImage` - opens Dall-E  
 
-### markdown-preview:  
+### [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
 sends markdown files to browser where it can be viewed.
-`:MarkdownPreview` opens `.md` file in browser
+`:MarkdownPreview` opens `.md` file in browser.
 
 ### [mini surround](https://github.com/echasnovski/mini.surround):  
-- `sa + )` add () surroundings (both in visual and motion mode)
+- `sa + )` add () surroundings (both in visual and motion mode).
 - `sd + )` delete () surroundings.
 
-### nvim-comment:
-quick commenting: `gcc` - one line. `gc` - multiple lines
+### [nvim-comment](https://github.com/terrortylor/nvim-comment):
+quick commenting:
+- `gcc` comment / uncomment one line. 
+- `gc` comment / uncomment multiple lines.
 
-### nvim-dap:
+### [nvim-dap](https://github.com/rcarriga/nvim-dap-ui):
 helps debugging
 
 ### [nvim-cmp](https://github.com/hrsh7th/nvim-cmp):  
 Used for auto-completion
 
-### nvim-lspconfig:  
+### [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig):  
 Language Server Protocol (LSP) using `pyright`.
 Among other things, responsible for:
 - code diagnostics.
@@ -60,12 +51,12 @@ Among other things, responsible for:
 - refactoring routines.  
 
 Commonly used shortcuts:
-- `<leader> rn` - refactor variable
-- `<leader> e` - show advanced diagnostics (errors)
-- `gd` - go to definition
-- `gr` - show references
+- `<leader> rn` refactor variable
+- `<leader> e` show advanced diagnostics (errors)
+- `gd` go to definition
+- `gr` show references
 
-### nvim-tree:  
+### [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 directory tree visualization while browsing files in nvim.
 `a test.py` creates new file "test". 
 `a /test` creates folder "test".
@@ -73,35 +64,40 @@ directory tree visualization while browsing files in nvim.
 `y` copy file name.
 `p` paste copied file (duplicating).
 
-### nvim-ufo:  
+### [nvim-ufo](https://github.com/kevinhwang91/nvim-ufo)
 folding.
-- `zM`- close all folds
-- `zR`- open all folds
-- `za` - open / close current fold
-- `zA` - open current fold and all within
-- `zm`- unfold one level
-- `zO` - unfold current scope completely
-- `zo` - unfold current scope one level
+- `zM` close all folds
+- `zR`open all folds
+- `za` open / close current fold
+- `zA` open current fold and all within
+- `zm` unfold one level
+- `zO` unfold current scope completely
+- `zo` unfold current scope one level
 - `zC`
 
-### null-ls:  
-Linting & Formatting. Uses `ruff` as linter and `black` for formatting
+### [null-ls](jose-elias-alvarez/null-ls.nvim)
+Linting & Formatting. Using:
+- `ruff` linter for python
+- `black` formatting for python
+- `clang` formatting for c++
 
 ### [octo.nvim](https://github.com/pwntester/octo.nvim):
 Edit and review GitHub issues and PRs.
 - `Octo pr` Open PR.
 - `Octo pr changes` Show changes in PR.
+- `gh auth refresh -s read:project` refresh projects rights with gith authenticator
 
-### tmux-lua:  
+### [tmux-lua](https://github.com/alexghergh/nvim-tmux-navigation)
 Tmux installation for multiplexing / sessions.
 
-### telescope:  
-fuzzy finder (<leader> ff)
+### [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- `<leader> ff`- fuzzy find file
+- `<leader> fg`- live grep
 
-### treesitter:
+### [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 Better syntax highlighting than regex-based highlighting.
 
-### vim-jukit:
+### [vim-jukit](https://github.com/luk400/vim-jukit)
 editting and creating juypter notebooks.
 - `<leader> co` Creating new cells
 - `<leader> np` Convert file from .ipynb to .py and vice versa
@@ -116,6 +112,8 @@ editting and creating juypter notebooks.
 #### windows
 - `<leader> od` Close output window
 
-### vimtex:  
-latex compiler. best to be used together with reader that supports real time building.
+### [vimtex](https://github.com/lervag/vimtex)
+latex compiler. best to be used together with reader that supports real time building 
+(like [skim](https://dr563105.github.io/blog/skim-vimtex-setup/))
+
 - `\ll` building (activating automatic compilation when saving)

@@ -145,3 +145,5 @@ export PATH="/opt/homebrew/opt/bzip2/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit

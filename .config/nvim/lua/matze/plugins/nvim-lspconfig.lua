@@ -10,24 +10,13 @@ return {
 	local capabilities = vim.lsp.protocol.make_client_capabilities()
 	capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
-	local mason = require('mason')
-	mason.setup{
-                ui = {
-			icons = {
-				package_installed = "✓",
-				package_pending = "➜",
-				package_uninstalled = "✗"
-			}
-		},
-	    }
-
 	local mason_lspconfig = require 'mason-lspconfig'
 	mason_lspconfig.setup {
-		ensure_installed = { "pyright" }
+		ensure_installed = { "pyright", "clangd", }
 	}
 
 	local lspconfig = require('lspconfig')
-	lspconfig.tsserver.setup {}
+	lspconfig.ts_ls.setup {}
 	lspconfig.rust_analyzer.setup{
 	  -- Server-specific settings. See `:help lspconfig-setup`
 	  settings = {
@@ -37,6 +26,12 @@ return {
 	  on_attach = on_attach,
 	  capabilities = capabilities,
 	  filetypes = {"python"},
+	}
+
+	-- CLANG FOR C++ --
+	lspconfig.clangd.setup{
+	  on_attach = on_attach,
+	  capabilities = capabilities,
 	}
 
 	-- Global mappings.

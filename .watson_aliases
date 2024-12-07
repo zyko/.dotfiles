@@ -1,7 +1,8 @@
 # vim: filetype=sh
-# following env vars must be set:
-# $WATSON_TIMESHEET_FOLDER, $WATSON_DAY_ENDTIME
 
+export WATSON_DAY_ENDTIME="14:24"
+export WATSON_TIMESHEET_FOLDER="$CLOUD_DIR/Meta/stunden/watson/"
+export WATSON_DIR=${SETTINGS_DIR}/watson
 
 alias waly="watson log -yGc"
 alias wap="watson projects"
@@ -9,6 +10,7 @@ alias warw="watson report -w -G"
 alias warm="watson report -m -G"
 alias walw="watson log -wGc && warw"
 alias walm="watson log -mGc && warm"
+alias wac="nvim $WATSON_DIR/config"
 
 wav() {
     if [ $# -eq 0 ]; then

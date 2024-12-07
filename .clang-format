@@ -1,0 +1,2 @@
+BasedOnStyle: LLVM  # or any preferred base style
+ColumnLimit: 100    # your preferred line length limit

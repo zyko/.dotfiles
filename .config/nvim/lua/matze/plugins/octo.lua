@@ -9,6 +9,8 @@ return {
   },
   config = function ()
 	local octo = require("octo")
-	octo.setup()
+	octo.setup({
+		default_to_projects_v2 = true,
+	})
   end
 }

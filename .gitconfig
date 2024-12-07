@@ -4,6 +4,7 @@
 [user]
 	name = Matthias Burkhardt
 	email = 13379192+zyko@users.noreply.github.com
+	signingkey = 6E5BF172
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -13,3 +14,9 @@
 	useHttpPath = true
 [core]
 	excludesfile = ~/.gitignore_global
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[commit]
+	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg

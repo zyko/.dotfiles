@@ -7,8 +7,16 @@ This repository contains:
 The dotfiles are being symlinked using [stow](https://www.gnu.org/software/stow/manual/stow.html) 
 as described in [this blog entry](https://tamerlan.dev/how-i-manage-my-dotfiles-using-gnu-stow/).
 
+In short:
+1. create new `.some_config` file in `~/.dotfiles/`
+2. `stow ~/.dotfiles/`
+automatically links files into home directory
+
 
 # Configs
+## [rectangle](https://rectangleapp.com)
+Move and resize windows in macOS using keyboard shortcuts or snap areas.
+
 ## [karabiner](https://karabiner-elements.pqrs.org/)
 Stores custom keyboard shortcuts and button remappings.
 
@@ -28,23 +36,24 @@ are stored in `.tmux.conf`.
 - `ctrl + b` leader
 
 ### Tmux Configs
-- `ctrl + b + s` - show all sessions
-- `ctrl + b + w` - show all windows
-- `ctrl + b + $` - rename session
-- `ctrl + b + z` - maximize pane
-- `ctrl + b + [` - enter visual mode in terminal
-- `ctrl + b + {` - swap panes
-- `ctrl + b + L` - switch to last attached session
+my: <leader> = ctrl + b
+
+- `<leader> + s` - show all sessions
+- `<leader> + w` - show all windows
+- `<leader> + $` - rename session
+- `<leader> + z` - maximize pane
+- `<leader> + [` - enter visual mode in terminal
+- `<leader> + {` - swap panes
+- `<leader> + L` - switch to last attached session
 
 ### Plugins
 #### [Tmux Plugin Manager (tpm)](https://github.com/tmux-plugins/tpm)
 #### tmux-resurrect
-- `ctrl + b + ctrl + s` save sessions
-- `ctrl + b + ctrl + r` restore sessions
+- `<leader> + ctrl + s` save sessions
+- `<leader> + ctrl + r` restore sessions
 
-
-## Bash
-For bash aliases, settings and functions, I have three different files:
+## Shell
+For aliases, settings and functions, I have three different files:
 1. `.zshrc` main run commands for my zsh terminal. This has the least manual configuration, except for calling (2.) and (4.).
 2. `.bash_aliases` main configuration file for all aliases and shortcuts I am using. Executes (3.)
 3. `.watson_aliases` only configurations and functions for Cl tool watson for time tracking.
@@ -57,7 +66,7 @@ Apart from configs that are stored here, I use some software without saved confi
 IMAP email client for writing emails in markdown.
 
 ## [Fantastical](https://flexibits.com/fantastical)
-Calendar app
+Calendar app.
 
 ## [Obsidian](https://obsidian.md/)
 notes in markdown. Notes themselves are stored in non-public cloud service.
@@ -85,28 +94,31 @@ Chromium based browser with the following addons:
 - `yy` copies current URL to clipboard
 
 ### [Dark Reader](https://darkreader.org/)
-protect my eyes 
+protects my eyes.
 
 ### [Notifier for GitHub](https://github.com/sindresorhus/notifier-for-github)
 notifies for any repositories that you are watching. Also from organizations that don't allow e-mail notifications.
 
 ## [iterm2](https://iterm2.com/)
 terminal for mac.
-Including the following tools
+Including the following tools:
 
 ### [Lazy Git](https://github.com/jesseduffield/lazygit)  
 - `LazyGit` to start
 
 ### [Oh my zsh](https://ohmyz.sh)  
+- `take <directory_name>` Creates <directory_name> and changes directory.
 
 ### [imgcat](https://apple.stackexchange.com/questions/256322/how-to-install-imgcat-on-iterm2)  
 
 ### [Watson](https://github.com/TailorDev/Watson)  
+CLI to track time
 - [blog entry](https://elijahmanor.com/blog/watson-tmux)
 - [official documentation](https://tailordev.github.io/Watson/user-guide/commands/)
 
-# Other useful commands
-## (GPU) Server
 
-- `nohup python3 my_script.py &` executes python script in background (no hang up).
-- `nvidia-smi` shows overview over nvidia GPUs.
+## [AppCleaner](https://freemacsoft.net/appcleaner/)
+AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
+
+## [Zotero](https://www.zotero.org)
+Collect, organize, and annotate research.

@@ -38,12 +38,14 @@ autoload -Uz compinit && compinit
 alias l="ls -CF"
 alias la="ls -A"
 alias ll="ls -alF"
+alias lt="ls -lt"
 alias rl="source ~/.zshrc"
 alias basha="nvim ~/.bash_aliases"
 alias bashrc="nvim ~/.zshrc"
 
 # __ Git __
 
+export GPG_TTY=$(tty)
 alias gitcm="git commit -s -m"
 alias gcm="git commit -s -m"
 alias gits="git status"
