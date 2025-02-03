@@ -8,8 +8,8 @@ The dotfiles are being symlinked using [stow](https://www.gnu.org/software/stow/
 as described in [this blog entry](https://tamerlan.dev/how-i-manage-my-dotfiles-using-gnu-stow/).
 
 In short:
-1. create new `.some_config` file in `~/.dotfiles/`
-2. `stow ~/.dotfiles/`
+1. create new `~/.dotfiles/a/b/some_config.conf` that mirrors **the same file structure as in home directory**
+2. `cd ~/.dotfiles/` & `stow . `
 automatically links files into home directory
 
 
@@ -82,6 +82,7 @@ notes in markdown. Notes themselves are stored in non-public cloud service.
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
 - [Reminder](https://github.com/uphy/obsidian-reminder)
 - [Advanced Slides](https://github.com/MSzturc/obsidian-advanced-slides)
+- [Mark-When](https://github.com/mark-when/obsidian-plugin/tree/main)
 
 ## [Vivaldi](https://vivaldi.com/)
 Chromium based browser with the following addons:
@@ -121,4 +122,9 @@ CLI to track time
 AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
 
 ## [Zotero](https://www.zotero.org)
-Collect, organize, and annotate research.
+Collect, organize, and annotate research. Good and short video tutorial can be found 
+[here](https://www.youtube.com/watch?v=JG7Uq_JFDzE)
+
+### Addons
+- [Zotero Connector for Chromium Browser](https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc?hl=en)
+- [Better BibTeX](https://retorque.re/zotero-better-bibtex/)

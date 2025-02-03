@@ -1,6 +1,7 @@
 -- default environment
 vim.g.python3_host_prog = "/Users/matze/Coding/envs/env_default/bin/python3.10"
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 
 
 vim.api.nvim_exec([[
@@ -11,10 +12,10 @@ vim.api.nvim_exec([[
 -- automatically activates the venv from terminal if jukit is opened
 vim.g.jukit_shell_cmd = 'source "$(dirname $(which python))/activate" && ipython3'
 vim.api.nvim_set_keymap('n', '<S-CR>', ':call jukit#send#line()<CR>', { noremap = true, silent = true })
---
+
 -- _plotting_
-vim.g.jukit_terminal = 'tmux' -- does not work currently
-vim.g.jukit_inline_plotting = 1 -- inline (1) does not work currently
+vim.g.jukit_terminal = 'tmux' 
+vim.g.jukit_inline_plotting = 1 
 vim.g.jukit_mpl_style = 1 
 
 -- enables clipboard for copying text from nvim to os
@@ -71,6 +72,9 @@ vim.opt.signcolumn = "yes"
 -- automatically saves files
 vim.o.autowriteall = true
 vim.env.LANG = "en_US.UTF-8"
+vim.opt.encoding = "utf-8"        -- Sets internal encoding for Neovim
+vim.opt.fileencoding = "utf-8"   -- Sets file encoding for written files
+vim.opt.fileencodings = { "utf-8", "latin1" } -- Specifies encodings for file detection
 -- set langmap=öäÖÄ;{}[]
 
 require("matze.lazy")

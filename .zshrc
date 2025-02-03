@@ -1,3 +1,8 @@
+# this must be before powerlelvel10k. see here:
+# https://unix.stackexchange.com/questions/608842/zshrc-export-gpg-tty-tty-says-not-a-tty
+export GPG_TTY=$(tty)
+export GPG_TTY=`tty`
+export GPG_TTY=$TTY
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.

@@ -28,7 +28,7 @@ sends markdown files to browser where it can be viewed.
 
 ### [mini surround](https://github.com/echasnovski/mini.surround):  
 - `sa + )` add () surroundings (both in visual and motion mode).
-- `sd + )` delete () surroundings.
+- `sd + )` delete () surroundings (in motion mode, nothing marked).
 
 ### [nvim-comment](https://github.com/terrortylor/nvim-comment):
 quick commenting:

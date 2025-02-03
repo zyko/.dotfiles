@@ -16,10 +16,8 @@ alias cde="cd ${ENVS_DIR}"
 alias cdr="cd ${REPOS_DIR}"
 alias waa="nvim ${HOME}/.watson_aliases"
 
-# __ ITERM __
-export MPLBACKEND="module://itermplot"
-# export MPLBACKEND="module://imgcat"  # only works for later tmux versions
-export ITERMPLOT="rv"
+# __ KITTY __
+# export MPLBACKEND="module://agg"
 
 # __ NVIM __
 bindkey -v
