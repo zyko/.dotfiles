@@ -75,7 +75,7 @@ protects my eyes.
 ### [Notifier for GitHub](https://github.com/sindresorhus/notifier-for-github)
 notifies for any repositories that you are watching. Also from organizations that don't allow e-mail notifications.
 
-## [Terminal (kitty](https://sw.kovidgoyal.net/kitty/)
+## [Terminal (kitty)](https://sw.kovidgoyal.net/kitty/)
 terminal emulator for mac.
 For aliases, settings and functions, I have three different files:
 1. `.zshrc` main run commands for my zsh terminal. This has the least manual configuration, except for calling (2.) and (4.).
