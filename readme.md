@@ -1,8 +1,9 @@
 # Information about plugins, addons and mac software.
+
 This repository contains:
-- linked dotfiles.
+- linked dotfiles (mostly configs).
 - list of my most useful mac software including plugins and addons.
-- most useful commands and shortcuts.
+- most useful commands and shortcuts (though some are also in cheatsheet repo).
 
 The dotfiles are being symlinked using [stow](https://www.gnu.org/software/stow/manual/stow.html) 
 as described in [this blog entry](https://tamerlan.dev/how-i-manage-my-dotfiles-using-gnu-stow/).
@@ -10,10 +11,11 @@ as described in [this blog entry](https://tamerlan.dev/how-i-manage-my-dotfiles-
 In short:
 1. create new `~/.dotfiles/a/b/some_config.conf` that mirrors **the same file structure as in home directory**
 2. `cd ~/.dotfiles/` & `stow . `
-automatically links files into home directory
+automatically links files into home directory.
 
 
-# Configs
+# Mac Software
+
 ## [rectangle](https://rectangleapp.com)
 Move and resize windows in macOS using keyboard shortcuts or snap areas.
 
@@ -22,45 +24,6 @@ Stores custom keyboard shortcuts and button remappings.
 
 ## [linearmouse](https://linearmouse.app/)
 Store custom mouse configurations in per-device settings.
-
-## Nvim
-Check [separate readme file](.config/nvim/readme.md)
-
-## Git
-- `.gitconfig`
-- `.gitignore_global` Ignore some directories in all repos.
-
-## [Tmux (Version 3.2a)](https://github.com/tmux/tmux/wiki)  
-Settings followed on most party by [this video](https://www.youtube.com/watch?v=U-omALWIBos) and 
-are stored in `.tmux.conf`.
-- `ctrl + b` leader
-
-### Tmux Configs
-`<leader> = ctrl + b`
-
-- `<leader> + s` - show all sessions
-- `<leader> + w` - show all windows
-- `<leader> + $` - rename session
-- `<leader> + z` - maximize pane
-- `<leader> + [` - enter visual mode in terminal
-- `<leader> + {` - swap panes
-- `<leader> + L` - switch to last attached session
-
-### Plugins
-#### [Tmux Plugin Manager (tpm)](https://github.com/tmux-plugins/tpm)
-#### tmux-resurrect
-- `<leader> + ctrl + s` save sessions
-- `<leader> + ctrl + r` restore sessions
-
-## Shell
-For aliases, settings and functions, I have three different files:
-1. `.zshrc` main run commands for my zsh terminal. This has the least manual configuration, except for calling (2.) and (4.).
-2. `.bash_aliases` main configuration file for all aliases and shortcuts I am using. Executes (3.)
-3. `.watson_aliases` only configurations and functions for Cl tool watson for time tracking.
-3. `.bash_mac`(hidden) software and user specific config file. Is stored in a non-public cloud service.
-
-# Mac Software
-Apart from configs that are stored here, I use some software without saved configs, such as:
 
 ## [MailMate](https://freron.com)
 IMAP email client for writing emails in markdown.
@@ -84,6 +47,18 @@ notes in markdown. Notes themselves are stored in non-public cloud service.
 - [Advanced Slides](https://github.com/MSzturc/obsidian-advanced-slides)
 - [Mark-When](https://github.com/mark-when/obsidian-plugin/tree/main)
 
+## [AppCleaner](https://freemacsoft.net/appcleaner/)
+AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
+
+## [Zotero](https://www.zotero.org)
+Collect, organize, and annotate research. Good and short video tutorial can be found 
+[here](https://www.youtube.com/watch?v=JG7Uq_JFDzE). Including following addons
+
+### [Zotero Connector for Chromium Browser](https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc?hl=en)
+Connects Zotero to Chromium Browser.
+
+### [Better BibTeX](https://retorque.re/zotero-better-bibtex/)
+
 ## [Vivaldi](https://vivaldi.com/)
 Chromium based browser with the following addons:
 
@@ -100,9 +75,15 @@ protects my eyes.
 ### [Notifier for GitHub](https://github.com/sindresorhus/notifier-for-github)
 notifies for any repositories that you are watching. Also from organizations that don't allow e-mail notifications.
 
-## [iterm2](https://sw.kovidgoyal.net/kitty/)
+## [Terminal (kitty](https://sw.kovidgoyal.net/kitty/)
 terminal emulator for mac.
-Including the following tools
+For aliases, settings and functions, I have three different files:
+1. `.zshrc` main run commands for my zsh terminal. This has the least manual configuration, except for calling (2.) and (4.).
+2. `.bash_aliases` main configuration file for all aliases and shortcuts I am using. Executes (3.)
+3. `.watson_aliases` only configurations and functions for Cl tool watson for time tracking.
+3. `.bash_mac`(hidden) software and user specific config file. Is stored in a non-public cloud service.
+
+Includes the following tools:
 
 ### [Lazy Git](https://github.com/jesseduffield/lazygit)  
 - `LazyGit` to start
@@ -117,14 +98,27 @@ CLI to track time
 - [blog entry](https://elijahmanor.com/blog/watson-tmux)
 - [official documentation](https://tailordev.github.io/Watson/user-guide/commands/)
 
+## Nvim
+Check [separate readme file](.config/nvim/readme.md)
 
-## [AppCleaner](https://freemacsoft.net/appcleaner/)
-AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
+## [Tmux (Version 3.2a)](https://github.com/tmux/tmux/wiki)  
+Settings followed on most party by [this video](https://www.youtube.com/watch?v=U-omALWIBos) and 
+are stored in `.tmux.conf`.
+- `ctrl + b` leader
 
-## [Zotero](https://www.zotero.org)
-Collect, organize, and annotate research. Good and short video tutorial can be found 
-[here](https://www.youtube.com/watch?v=JG7Uq_JFDzE)
+### Tmux Configs
+`<leader> = ctrl + b`
 
-### Addons
-- [Zotero Connector for Chromium Browser](https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc?hl=en)
-- [Better BibTeX](https://retorque.re/zotero-better-bibtex/)
+- `<leader> + s` - show all sessions
+- `<leader> + w` - show all windows
+- `<leader> + $` - rename session
+- `<leader> + z` - maximize pane
+- `<leader> + [` - enter visual mode in terminal
+- `<leader> + {` - swap panes
+- `<leader> + L` - switch to last attached session
+
+### Plugins
+#### [Tmux Plugin Manager (tpm)](https://github.com/tmux-plugins/tpm)
+#### tmux-resurrect
+- `<leader> + ctrl + s` save sessions
+- `<leader> + ctrl + r` restore sessions
