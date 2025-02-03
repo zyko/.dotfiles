@@ -100,9 +100,9 @@ protects my eyes.
 ### [Notifier for GitHub](https://github.com/sindresorhus/notifier-for-github)
 notifies for any repositories that you are watching. Also from organizations that don't allow e-mail notifications.
 
-## [iterm2](https://iterm2.com/)
-terminal for mac.
-Including the following tools:
+## [iterm2](https://sw.kovidgoyal.net/kitty/)
+terminal emulator for mac.
+Including the following tools
 
 ### [Lazy Git](https://github.com/jesseduffield/lazygit)  
 - `LazyGit` to start
