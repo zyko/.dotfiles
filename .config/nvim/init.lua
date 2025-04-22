@@ -74,35 +74,10 @@ vim.opt.encoding = "utf-8"        -- Sets internal encoding for Neovim
 vim.opt.fileencoding = "utf-8"   -- Sets file encoding for written files
 vim.opt.fileencodings = { "utf-8", "latin1" } -- Specifies encodings for file detection
 
--- remapping unnecessary german letters
--- vim.keymap.set({"i", "v"}, 'ö', '[', { noremap = true, silent = true })
--- vim.keymap.set({"i", "v"}, 'Ö', ']', { noremap = true, silent = true })
--- vim.keymap.set("n", "ö", ']]', { noremap = true, silent = true })
--- vim.keymap.set("n", "Ö", '[[', { noremap = true, silent = true })
--- Map ö to execute normal mode ]]
--- vim.keymap.set("n", "ö", function() vim.cmd('normal! ]]') end, { noremap = true, silent = true, desc = "Jump to next section/method" })
--- Map Ö to execute normal mode [[
--- vim.keymap.set("n", "Ö", function() vim.cmd('normal! [[') end, { noremap = true, silent = true, desc = "Jump to previous section/method" })
-vim.keymap.set({"n", "i", "v"}, 'ä', '%', { noremap = true, silent = true })
-
-
-
-
--- debugging
--- -- Add a temporary mapping for an ASCII key (e.g., F5)
-
--- vim.keymap.set("n", "<leader>t", ']]', { noremap = true, silent = false, desc = "TEST Jump next section (direct string map)" })
--- vim.keymap.set('n', 't', '[[')
--- vim.keymap.set('n', 't', ']]')
-
--- vim.keymap.set("n", "<leader>t", function()
---     print("Executing normal! ]] via F5") -- Add print for feedback
---     vim.cmd('normal! ]]')
---     print("Finished normal! ]] via F5")
--- end, { noremap = true, silent = false, desc = "TEST Jump next section" }) -- Set silent = false
---
--- vim.keymap.set("n", "t", "]]")
-
+-- remapping german letters
+vim.keymap.set({"i", "v"}, 'ö', '[', { noremap = true, silent = true })
+vim.keymap.set({"i", "v"}, 'Ö', ']', { noremap = true, silent = true })
+vim.keymap.set("n", 'ö', '%', { noremap = true, silent = true })
 
 vim.g.vimtex_compiler_latexmk = {
   build_dir = 'build',
