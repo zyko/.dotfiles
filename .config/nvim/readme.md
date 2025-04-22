@@ -117,3 +117,9 @@ latex compiler. best to be used together with reader that supports real time bui
 (like [skim](https://dr563105.github.io/blog/skim-vimtex-setup/))
 
 - `\ll` building (activating automatic compilation when saving)
+- `gq` formatting
+
+### [Copilot](https://github.com/github/copilot.vim)
+GitHub Copilot integration.
+
+- `:help copilot` - help

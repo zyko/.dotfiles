@@ -12,7 +12,7 @@ return {
 
 	local mason_lspconfig = require 'mason-lspconfig'
 	mason_lspconfig.setup {
-		ensure_installed = { "pyright", "clangd", }
+		ensure_installed = { "pyright", "clangd", "ltex"}
 	}
 
 	local lspconfig = require('lspconfig')
@@ -33,6 +33,24 @@ return {
 	  on_attach = on_attach,
 	  capabilities = capabilities,
 	}
+        lspconfig.ltex.setup({
+            settings = {
+                ltex = {
+                    language = "en-US",
+                    additionalRules = {
+                        enablePickyRules = true,
+                        motherTongue = "de", -- Set your native language for better suggestions
+                    },
+                    disabledRules = {
+                        ["en-US"] = { "WHITESPACE_RULE" }, -- Example of disabling specific rules
+                    },
+                    dictionary = {
+                        ["en-US"] = { "Neovim", "vimtex", "Lua", "ltex-ls" }, -- Add custom words to the dictionary
+                    },
+                },
+            },
+            filetypes = { "tex", "markdown", "text" },
+            })
 
 	-- Global mappings.
 	-- See `:help vim.diagnostic.*` for documentation on any of the below functions

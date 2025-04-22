@@ -161,20 +161,12 @@
                     },
                     "simple_modifications": [
                         {
-                            "from": { "consumer_key_code": "mute" },
-                            "to": [{ "key_code": "f1" }]
-                        },
-                        {
                             "from": { "key_code": "left_command" },
                             "to": [{ "key_code": "left_control" }]
                         },
                         {
                             "from": { "key_code": "left_control" },
                             "to": [{ "key_code": "left_command" }]
-                        },
-                        {
-                            "from": { "consumer_key_code": "al_email_reader" },
-                            "to": [{ "key_code": "f4" }]
                         }
                     ]
                 },
@@ -312,6 +304,108 @@
                     "to": [{ "key_code": "grave_accent_and_tilde" }]
                 }
             ]
-        }
+        },
+        {
+            "devices": [
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 631,
+                        "vendor_id": 5426
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "consumer_key_code": "ac_refresh" },
+                            "to": [{ "key_code": "f5" }]
+                        },
+                        {
+                            "from": { "consumer_key_code": "al_email_reader" },
+                            "to": [{ "key_code": "f4" }]
+                        },
+                        {
+                            "from": { "consumer_key_code": "mute" },
+                            "to": [{ "key_code": "f1" }]
+                        },
+                        {
+                            "from": { "consumer_key_code": "volume_decrement" },
+                            "to": [{ "key_code": "f2" }]
+                        },
+                        {
+                            "from": { "consumer_key_code": "volume_increment" },
+                            "to": [{ "key_code": "f3" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 632,
+                        "vendor_id": 1678
+                    },
+                    "ignore": false,
+                    "simple_modifications": [
+                        {
+                            "from": { "consumer_key_code": "mute" },
+                            "to": [{ "key_code": "f1" }]
+                        },
+                        {
+                            "from": { "consumer_key_code": "volume_decrement" },
+                            "to": [{ "key_code": "f2" }]
+                        }
+                    ]
+                }
+            ],
+            "fn_function_keys": [
+                {
+                    "from": { "key_code": "f3" },
+                    "to": [{ "key_code": "f3" }]
+                },
+                {
+                    "from": { "key_code": "f4" },
+                    "to": [{ "key_code": "f4" }]
+                }
+            ],
+            "name": "wc3 (Matze Profile)",
+            "simple_modifications": [
+                {
+                    "from": { "consumer_key_code": "al_email_reader" },
+                    "to": [{ "key_code": "vk_none" }]
+                },
+                {
+                    "from": { "consumer_key_code": "mute" },
+                    "to": [{ "key_code": "f1" }]
+                },
+                {
+                    "from": { "consumer_key_code": "volume_decrement" },
+                    "to": [{ "key_code": "f2" }]
+                },
+                {
+                    "from": { "consumer_key_code": "volume_increment" },
+                    "to": [{ "key_code": "f3" }]
+                },
+                {
+                    "from": { "key_code": "caps_lock" },
+                    "to": [{ "key_code": "escape" }]
+                },
+                {
+                    "from": { "key_code": "escape" },
+                    "to": [{ "key_code": "keypad_7" }]
+                },
+                {
+                    "from": { "key_code": "grave_accent_and_tilde" },
+                    "to": [{ "key_code": "keypad_8" }]
+                },
+                {
+                    "from": { "key_code": "left_command" },
+                    "to": [{ "key_code": "left_control" }]
+                },
+                {
+                    "from": { "key_code": "left_control" },
+                    "to": [{ "key_code": "left_command" }]
+                }
+            ]
+        },
+        { "name": "csgo (Matze Profile)" }
     ]
 }

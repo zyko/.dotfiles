@@ -3,7 +3,6 @@ vim.g.python3_host_prog = "/Users/matze/Coding/envs/env_default/bin/python3.10"
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
-
 vim.api.nvim_exec([[
   autocmd FileType tex setlocal shiftwidth=4 tabstop=4 expandtab
 ]], false)
@@ -12,7 +11,6 @@ vim.api.nvim_exec([[
 -- automatically activates the venv from terminal if jukit is opened
 vim.g.jukit_shell_cmd = 'source "$(dirname $(which python))/activate" && ipython3'
 vim.api.nvim_set_keymap('n', '<S-CR>', ':call jukit#send#line()<CR>', { noremap = true, silent = true })
-
 -- _plotting_
 vim.g.jukit_terminal = 'tmux' 
 vim.g.jukit_inline_plotting = 1 
@@ -75,6 +73,49 @@ vim.env.LANG = "en_US.UTF-8"
 vim.opt.encoding = "utf-8"        -- Sets internal encoding for Neovim
 vim.opt.fileencoding = "utf-8"   -- Sets file encoding for written files
 vim.opt.fileencodings = { "utf-8", "latin1" } -- Specifies encodings for file detection
--- set langmap=öäÖÄ;{}[]
+
+-- remapping unnecessary german letters
+-- vim.keymap.set({"i", "v"}, 'ö', '[', { noremap = true, silent = true })
+-- vim.keymap.set({"i", "v"}, 'Ö', ']', { noremap = true, silent = true })
+-- vim.keymap.set("n", "ö", ']]', { noremap = true, silent = true })
+-- vim.keymap.set("n", "Ö", '[[', { noremap = true, silent = true })
+-- Map ö to execute normal mode ]]
+-- vim.keymap.set("n", "ö", function() vim.cmd('normal! ]]') end, { noremap = true, silent = true, desc = "Jump to next section/method" })
+-- Map Ö to execute normal mode [[
+-- vim.keymap.set("n", "Ö", function() vim.cmd('normal! [[') end, { noremap = true, silent = true, desc = "Jump to previous section/method" })
+vim.keymap.set({"n", "i", "v"}, 'ä', '%', { noremap = true, silent = true })
+
+
+
+
+-- debugging
+-- -- Add a temporary mapping for an ASCII key (e.g., F5)
+
+-- vim.keymap.set("n", "<leader>t", ']]', { noremap = true, silent = false, desc = "TEST Jump next section (direct string map)" })
+-- vim.keymap.set('n', 't', '[[')
+-- vim.keymap.set('n', 't', ']]')
+
+-- vim.keymap.set("n", "<leader>t", function()
+--     print("Executing normal! ]] via F5") -- Add print for feedback
+--     vim.cmd('normal! ]]')
+--     print("Finished normal! ]] via F5")
+-- end, { noremap = true, silent = false, desc = "TEST Jump next section" }) -- Set silent = false
+--
+-- vim.keymap.set("n", "t", "]]")
+
+
+vim.g.vimtex_compiler_latexmk = {
+  build_dir = 'build',
+  callback = 1,
+  continuous = 1,
+  executable = 'latexmk',
+  options = {
+    '-pdf',
+    '-shell-escape',
+    '-interaction=nonstopmode',
+    '-file-line-error',
+    '-synctex=1',
+  },
+}
 
 require("matze.lazy")

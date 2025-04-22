@@ -17,7 +17,7 @@ automatically links files into home directory.
 # Mac Software
 
 ## [rectangle](https://rectangleapp.com)
-Move and resize windows in macOS using keyboard shortcuts or snap areas.
+Move and resize windows on macOS using keyboard shortcuts or snap areas.
 
 ## [karabiner](https://karabiner-elements.pqrs.org/)
 Stores custom keyboard shortcuts and button remappings.
@@ -26,13 +26,13 @@ Stores custom keyboard shortcuts and button remappings.
 Store custom mouse configurations in per-device settings.
 
 ## [MailMate](https://freron.com)
-IMAP email client for writing emails in markdown.
+IMAP email client for writing emails in Markdown.
 
 ## [Fantastical](https://flexibits.com/fantastical)
 Calendar app.
 
 ## [Obsidian](https://obsidian.md/)
-notes in markdown. Notes themselves are stored in non-public cloud service.
+notes in Markdown. Notes themselves are stored in non-public cloud service.
 
 ### Shortcuts
 - `ctrl + o` open quick switcher
@@ -46,6 +46,7 @@ notes in markdown. Notes themselves are stored in non-public cloud service.
 - [Reminder](https://github.com/uphy/obsidian-reminder)
 - [Advanced Slides](https://github.com/MSzturc/obsidian-advanced-slides)
 - [Mark-When](https://github.com/mark-when/obsidian-plugin/tree/main)
+- [Vimrc Support](https://github.com/esm7/obsidian-vimrc-support)
 
 ## [AppCleaner](https://freemacsoft.net/appcleaner/)
 AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
@@ -60,20 +61,20 @@ Connects Zotero to Chromium Browser.
 ### [Better BibTeX](https://retorque.re/zotero-better-bibtex/)
 
 ## [Vivaldi](https://vivaldi.com/)
-Chromium based browser with the following addons:
+Chromium based browser with the following Addons:
 
 ### [Vimium](https://github.com/philc/vimium)  
 - `H` Go back in history
 - `T` Search through open tabs
-- `f` Show short cuts for links
-- `f + shift + <short cut>` open short cut in new tab
+- `f` Show shortcuts for links
+- `f + shift + <short cut>` open shortcut in new tab
 - `yy` copies current URL to clipboard
 
 ### [Dark Reader](https://darkreader.org/)
 protects my eyes.
 
 ### [Notifier for GitHub](https://github.com/sindresorhus/notifier-for-github)
-notifies for any repositories that you are watching. Also from organizations that don't allow e-mail notifications.
+notifies for any repositories that you are watching. Also, from organizations that don't allow e-mail notifications.
 
 ## [Terminal (kitty)](https://sw.kovidgoyal.net/kitty/)
 terminal emulator for mac.
@@ -102,7 +103,7 @@ CLI to track time
 Check [separate readme file](.config/nvim/readme.md)
 
 ## [Tmux (Version 3.2a)](https://github.com/tmux/tmux/wiki)  
-Settings followed on most party by [this video](https://www.youtube.com/watch?v=U-omALWIBos) and 
+Settings followed mostly on [this video](https://www.youtube.com/watch?v=U-omALWIBos) and 
 are stored in `.tmux.conf`.
 - `ctrl + b` leader
 

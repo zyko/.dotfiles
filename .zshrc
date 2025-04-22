@@ -152,3 +152,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+export PATH=$PATH:/Users/matze/.spicetify

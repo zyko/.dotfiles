@@ -5,6 +5,8 @@ echo ".bash_aliases is executed!"
 source ~/.watson_aliases
 # todo: throw error if CODE_DIR or CLOUD_DIR not set.
 
+export PATH="/Applications/Inkscape.app/Contents/MacOS/:$PATH"
+ 
 export REPOS_DIR="${CODE_DIR}/repos"
 export ENVS_DIR="${CODE_DIR}/envs"
 export DOTFILES_DIR="${HOME}/.dotfiles"
@@ -24,7 +26,7 @@ bindkey -v
 bindkey ^R history-incremental-search-backward 
 bindkey ^S history-incremental-search-forward
 alias nv="nvim ."
-alias nvimc="nvim ${HOME}/.config/nvim/"
+alias nvimc="nvim ${HOME}/.config/nvim/init.lua"
 
 # __ TMUX __
 alias tmuxc="nvim ${HOME}/.tmux.conf"
@@ -37,9 +39,10 @@ alias l="ls -CF"
 alias la="ls -A"
 alias ll="ls -alF"
 alias lt="ls -lt"
+alias lr="ls -lt -r"
 alias rl="source ~/.zshrc"
 alias basha="nvim ~/.bash_aliases"
-alias bashrc="nvim ~/.zshrc"
+alias zshrc="nvim ~/.zshrc"
 
 # __ Git __
 
