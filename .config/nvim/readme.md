@@ -123,3 +123,4 @@ latex compiler. best to be used together with reader that supports real time bui
 GitHub Copilot integration.
 
 - `:help copilot` - help
+- `ctrl + J` - accept suggestion
