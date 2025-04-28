@@ -18,6 +18,8 @@ alias cde="cd ${ENVS_DIR}"
 alias cdr="cd ${REPOS_DIR}"
 alias waa="nvim ${HOME}/.watson_aliases"
 
+alias c="clear"
+
 # __ KITTY __
 # export MPLBACKEND="module://agg"
 
@@ -26,7 +28,7 @@ bindkey -v
 bindkey ^R history-incremental-search-backward 
 bindkey ^S history-incremental-search-forward
 alias nv="nvim ."
-alias nvimc="nvim ${HOME}/.config/nvim/init.lua"
+alias nvimc="cd ${HOME}/.config/nvim && nvim init.lua"
 
 # __ TMUX __
 alias tmuxc="nvim ${HOME}/.tmux.conf"
