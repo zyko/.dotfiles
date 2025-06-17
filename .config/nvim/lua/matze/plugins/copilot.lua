@@ -3,6 +3,9 @@ return {
         lazy = false,
         config = function()
                 -- vim.api.nvim_set_keymap('i', '<C-g>', '<Plug>(copilot-accept)', { noremap = true, silent = true })
+                vim.g.copilot_filetypes = { ["*"] = false }
+                vim.keymap.set('i', '<C-s>', '<Plug>(copilot-suggest)', { noremap = true, silent = true })
+
                 vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
                   expr = true,
                   replace_keycodes = false
