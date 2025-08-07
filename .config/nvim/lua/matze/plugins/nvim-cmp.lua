@@ -3,7 +3,8 @@ return {
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     "L3MON4D3/LuaSnip",
-    "saadparwaiz1/cmp_luasnip"
+    "saadparwaiz1/cmp_luasnip",
+    "micangl/cmp-vimtex",
   },
   config = function()
     local has_words_before = function()
@@ -49,6 +50,7 @@ return {
         ["<CR>"] = cmp.mapping.confirm({ select=true }),
       }),
       sources = {
+        { name = "vimtex" },
         { name = "nvim_lsp" },
         { name = "luasnip" },
       }
