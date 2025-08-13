@@ -97,6 +97,11 @@ Tmux installation for multiplexing / sessions.
 - `<leader> ff`- fuzzy find file
 - `<leader> fg`- live grep
 
+### [todo-comments](https://github.com/folke/todo-comments.nvim)
+highlight and search for todo comments like TODO, HACK, BUG in your code base.
+- `:TodoLocList` - shows all todos in your project
+- `:TodoTelescope` - Search through all project todos with Telescope
+
 ### [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 Better syntax highlighting than regex-based highlighting.
 
