@@ -6,6 +6,7 @@ source ~/.watson_aliases
 # todo: throw error if CODE_DIR or CLOUD_DIR not set.
 
 export PATH="/Applications/Inkscape.app/Contents/MacOS/:$PATH"
+export PATH="/Applications/Bitwarden/:$PATH"
  
 export REPOS_DIR="${CODE_DIR}/repos"
 export ENVS_DIR="${CODE_DIR}/envs"
@@ -63,6 +64,14 @@ alias gitps='git push'
 alias gps='git push'
 alias gfo='git fetch origin'
 
+
+# __ PRE-COMMIT Alias
+alias prc="pre-commit run --all-files"
+
+# __ BITWARDEN CLI
+bwpw() {
+    bw get password "$1" | pbcopy
+}
 
 # __JUPYTER __
 #

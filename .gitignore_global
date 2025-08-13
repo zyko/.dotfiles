@@ -1,6 +1,7 @@
 .DS_Store
 .jukit
 .coverage
+.coverage*
 __pycache__/
 .ipynb_checkpoints/
 notebooks/*.py

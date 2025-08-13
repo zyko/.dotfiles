@@ -31,6 +31,9 @@ IMAP email client for writing emails in Markdown.
 ## [Fantastical](https://flexibits.com/fantastical)
 Calendar app.
 
+## [MacTex](https://www.tug.org/mactex/)
+MacTeX is a package which installs TeX Live on the Macintosh.
+
 ## [Obsidian](https://obsidian.md/)
 notes in Markdown. Notes themselves are stored in non-public cloud service.
 
@@ -59,6 +62,8 @@ Collect, organize, and annotate research. Good and short video tutorial can be f
 Connects Zotero to Chromium Browser.
 
 ### [Better BibTeX](https://retorque.re/zotero-better-bibtex/)
+Better BibTeX (BBT) is a plugin for Zotero that makes it easier to manage bibliographic data.
+Especially the feature to automatically export collection to .bib file.
 
 ## [Vivaldi](https://vivaldi.com/)
 Chromium based browser with the following Addons:
@@ -69,6 +74,7 @@ Chromium based browser with the following Addons:
 - `f` Show shortcuts for links
 - `f + shift + <short cut>` open shortcut in new tab
 - `yy` copies current URL to clipboard
+- `v` enter visual mode
 
 ### [Dark Reader](https://darkreader.org/)
 protects my eyes.
@@ -85,6 +91,9 @@ For aliases, settings and functions, I have three different files:
 3. `.bash_mac`(hidden) software and user specific config file. Is stored in a non-public cloud service.
 
 Includes the following tools:
+
+### [Bitwarden CLI](https://bitwarden.com/help/cli/)
+- `bwpw $item_name` - custom function to read password for `item_name`from vault and save it to clipboard
 
 ### [Lazy Git](https://github.com/jesseduffield/lazygit)  
 - `LazyGit` to start

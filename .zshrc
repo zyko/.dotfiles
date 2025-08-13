@@ -1,7 +1,7 @@
 # this must be before powerlelvel10k. see here:
 # https://unix.stackexchange.com/questions/608842/zshrc-export-gpg-tty-tty-says-not-a-tty
-export GPG_TTY=$(tty)
-export GPG_TTY=`tty`
+# export GPG_TTY=$(tty)
+# export GPG_TTY=`tty`
 export GPG_TTY=$TTY
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -117,7 +117,6 @@ export BASH_PC_SPECIFIC="$HOME/LRZ/Settings/.bash_mac"
 
 if [ -f $BASH_PC_SPECIFIC ]; then
 	source $BASH_PC_SPECIFIC
-        # source  "/Users/matze/LRZ/Settings/.bash_mac"
 else
 	echo "WARNING! pc-specific bash file was not found."
 fi
@@ -152,5 +151,3 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
-
-export PATH=$PATH:/Users/matze/.spicetify
