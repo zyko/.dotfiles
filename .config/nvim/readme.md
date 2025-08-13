@@ -9,6 +9,9 @@ Including following Plugins:
 ### [colorscheme](https://github.com/bluz71/vim-nightfly-colors)  
 for color schemes.
 
+### [conform](https://github.com/stevearc/conform.nvim?tab=readme-ov-file)  
+Lightweight yet powerful formatter plugin for Neovim
+
 ### [easymotion](https://github.com/easymotion/vim-easymotion)  
 smoother navigation.
 - `<leader> m f <char>` highlight <char> after cursor
