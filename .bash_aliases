@@ -81,8 +81,11 @@ alias jp='jupyter notebook --no-browser --allow-root'
 alias jupdm='jt -t monokai -f fira -fs 13 -nf ptsans -nfs 11 -N -kl -cursw 5 -cursc r -cellw 90% -T -vim'
 
 # project, repo and plugin aliases
+#
+alias act="source .venv/bin/activate"
 alias dotf="cd ${DOTFILES_DIR}"
 alias cs="cd ${REPOS_DIR}/cheatsheets"
+alias scripts="cd ${REPOS_DIR}/scripts && act"
 alias dalle="cd ${CODE_DIR}/data/dalle_images/"
 alias default="cd ${CLOUD_DIR}/Projects/default/Notebooks && source ${ENVS_DIR}/env_default/bin/activate"
 alias defaultjup="default && jp"
