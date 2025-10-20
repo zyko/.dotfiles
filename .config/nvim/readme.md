@@ -12,26 +12,42 @@ for color schemes.
 ### [conform](https://github.com/stevearc/conform.nvim?tab=readme-ov-file)  
 Lightweight yet powerful formatter plugin for Neovim
 
+### [copilot](https://github.com/github/copilot.vim)
+GitHub Copilot integration.
+
+- `:help copilot` - help
+- `ctrl + J` - accept suggestion
+
 ### [easymotion](https://github.com/easymotion/vim-easymotion)  
 smoother navigation.
 - `<leader> m f <char>` highlight <char> after cursor
 - `<leader> m w ` highlight beginning of words after cursor
 
+### [gp.nvim](https://github.com/Robitx/gp.nvim)
+API for llms. Currently mainly used for locally hosted llms.
 
-### [gp.nvim](https://github.com/Robitx/gp.nvim) (OpenAI API)
 - `:GpChatNew` - opens new gpt window
 - `:GpNextAgent` - cycles through agents
 - `:GpChatFinder` - opens finder 
 - `:GpChatToggle` - opens finder 
 - `:GpImage` - opens Dall-E  
 
+### [lazy git](https://github.com/jesseduffield/lazygit)
+GUI for merge conflicts.
+
 ### [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
-sends markdown files to browser where it can be viewed.
+Sends markdown files to browser where it can be viewed.
 `:MarkdownPreview` opens `.md` file in browser.
+
+### [mason](https://github.com/mason-org/mason.nvim):  
+Package Manager for installing LSP servers, linters and formatters.
 
 ### [mini surround](https://github.com/echasnovski/mini.surround):  
 - `sa + )` add () surroundings (both in visual and motion mode).
 - `sd + )` delete () surroundings (in motion mode, nothing marked).
+
+### [nvim-cmp](https://github.com/hrsh7th/nvim-cmp):  
+Used for auto-completion
 
 ### [nvim-comment](https://github.com/terrortylor/nvim-comment):
 quick commenting:
@@ -40,9 +56,6 @@ quick commenting:
 
 ### [nvim-dap](https://github.com/rcarriga/nvim-dap-ui):
 helps debugging
-
-### [nvim-cmp](https://github.com/hrsh7th/nvim-cmp):  
-Used for auto-completion
 
 ### [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig):  
 Language Server Protocol (LSP) using `pyright`.
@@ -78,24 +91,18 @@ folding.
 - `zo` unfold current scope one level
 - `zC`
 
-### [null-ls](jose-elias-alvarez/null-ls.nvim)
-Linting & Formatting. Using:
-- `ruff` linter for python
-- `black` formatting for python
-- `clang` formatting for c++
-
 ### [octo.nvim](https://github.com/pwntester/octo.nvim):
 Edit and review GitHub issues and PRs.
 - `Octo pr` Open PR.
 - `Octo pr changes` Show changes in PR.
 - `gh auth refresh -s read:project` refresh projects rights with gith authenticator
 
-### [tmux-lua](https://github.com/alexghergh/nvim-tmux-navigation)
-Tmux installation for multiplexing / sessions.
-
 ### [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - `<leader> ff`- fuzzy find file
 - `<leader> fg`- live grep
+
+### [tmux-lua](https://github.com/alexghergh/nvim-tmux-navigation)
+Tmux installation for multiplexing / sessions.
 
 ### [todo-comments](https://github.com/folke/todo-comments.nvim)
 highlight and search for todo comments like TODO, HACK, BUG in your code base.
@@ -127,8 +134,3 @@ latex compiler. best to be used together with reader that supports real time bui
 - `\ll` building (activating automatic compilation when saving)
 - `gq` formatting
 
-### [Copilot](https://github.com/github/copilot.vim)
-GitHub Copilot integration.
-
-- `:help copilot` - help
-- `ctrl + J` - accept suggestion
