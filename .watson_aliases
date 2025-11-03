@@ -12,6 +12,8 @@ alias walw="watson log -wGc && warw"
 alias walm="watson log -mGc && warm"
 alias wac="nvim $WATSON_DIR/config"
 
+alias wlm='watson_month_log'
+
 wav() {
     if [ $# -eq 0 ]; then
         echo "Usage: wav <yyyy-mm-dd>. E. g. wav 2024-05-13"
@@ -36,3 +38,34 @@ warep() {
     echo report for $current_year was saved
 }
 
+watson_month_log() {
+  # The 'gdate' command requires coreutils to be installed (which you've done).
+  
+  if [ -z "$1" ]; then
+    echo "Usage: wlm <month_number> [year]"
+    echo "Example: wlm 10 2024"
+    return 1
+  fi
+
+  # 1. Determine the year, defaulting to the current year
+  YEAR=${2:-$(date +%Y)} 
+  
+  # 2. Format the month number with a leading zero
+  MONTH=$(printf "%02d" "$1")
+
+  # 3. Construct the start date
+  START_DATE="$YEAR-$MONTH-01"
+
+  # 4. Calculate END_DATE using gdate's simple relative date math
+  # This finds the first day of the month, adds one month, and subtracts one day.
+  END_DATE=$(gdate -d "$START_DATE + 1 month - 1 day" +%Y-%m-%d)
+
+  if [ -z "$END_DATE" ]; then
+    echo "Error: Could not calculate the end date. Check gdate installation."
+    return 1
+  fi
+
+  echo "Logging $START_DATE to $END_DATE..."
+  # Execute the watson command
+  watson log --from "$START_DATE" --to "$END_DATE"
+}

@@ -79,6 +79,8 @@ directory tree visualization while browsing files in nvim.
 `c` copy file.
 `y` copy file name.
 `p` paste copied file (duplicating).
+`m` to mark files
+`bmv` to move marked files to given directory
 
 ### [nvim-ufo](https://github.com/kevinhwang91/nvim-ufo)
 folding.

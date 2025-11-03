@@ -4,10 +4,6 @@ return
         config = function()
                 require("gp").setup({
                         chat_shortcut_new = { modes = { "n", "i", "v", "x" }, shortcut = "<C-g>c" },
-
-                        image = {
-                                store_dir = os.getenv("CODE_DIR") .. "/data" .. "/dalle_images"
-                        },
                         providers = {
                                 ollama = {
                                         endpoint = os.getenv("OLLAMA_ENDPOINT"),

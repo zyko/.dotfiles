@@ -75,9 +75,7 @@ bwpw() {
 
 # __JUPYTER __
 #
-# Jupyter Notebook (deprecated)
-alias jp='jupyter notebook --no-browser --allow-root'
-# --NotebookApp.allow_origin=* --NotebookApp.allow_remote_access=1'
+alias jp='jupyter notebook --allow-root'
 alias jupdm='jt -t monokai -f fira -fs 13 -nf ptsans -nfs 11 -N -kl -cursw 5 -cursc r -cellw 90% -T -vim'
 
 # project, repo and plugin aliases
